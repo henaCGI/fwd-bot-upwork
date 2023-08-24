@@ -24,10 +24,10 @@ bot.on("forward_date", (ctx) => {
   }
 });
 bot.launch({
-  /*   webhook: {
+  webhook: {
     domain: "https://forwarder-bot-demo.onrender.com",
     port: process.env.PORT || 5000,
-  }, */
+  },
 });
 // Enable graceful stop
 process.once("SIGINT", () => bot.stop("SIGINT"));
